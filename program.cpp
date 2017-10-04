@@ -25,7 +25,7 @@ class itemStore {
 			strcpy(temp->name, t.name);
 			temp->price = t.price;
 
-			temp->link = t.link;
+			temp->link = top;
 			top = temp;
 		}
 		file.close();
@@ -109,5 +109,3 @@ void main() {
 	i.addItem();
 	i.displayItem();
 }
-
-
